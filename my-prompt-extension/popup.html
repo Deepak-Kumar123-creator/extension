@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Saver</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Prompt Saver</h1>
 
+    <div class="input-section">
+      <input type="text" id="titleInput" placeholder="Prompt title" />
+      <textarea id="promptInput" placeholder="Write your prompt here..."></textarea>
+      <button id="saveBtn">Save Prompt</button>
+    </div>
+
+    <div class="search-section">
+      <input type="text" id="searchInput" placeholder="Search prompts..." />
+    </div>
+
+    <div id="messageBox"></div>
+
+    <div class="list-section">
+      <h2>Saved Prompts</h2>
+      <div id="promptList"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
