@@ -1,1 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
+body {
+  width: 380px;
+  min-height: 500px;
+  background: #f4f6f8;
+  color: #222;
+  padding: 12px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+h1 {
+  font-size: 22px;
+  text-align: center;
+  color: #111827;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.input-section,
+.search-section,
+.list-section {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+#messageBox {
+  min-height: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: green;
+}
+
+.prompt-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.prompt-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.prompt-text {
+  font-size: 13px;
+  color: #374151;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.copy-btn {
+  background: #16a34a;
+}
+
+.copy-btn:hover {
+  background: #15803d;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.empty-state {
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
+  padding: 10px 0;
+}
